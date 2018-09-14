@@ -15,7 +15,7 @@ def assign_rooms(attendees)
   puts "#{index}: #{value}"
   
 end
-
+assign_rooms(attendees)
 end
 
 def printer
