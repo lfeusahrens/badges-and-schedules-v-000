@@ -10,8 +10,8 @@ end
 new_array
 end
 
-def assign_rooms(attendees)
-  ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"].each_with_index do |value, index|
+def assign_rooms
+  attendees.each_with_index do |value, index|
   puts "#{index}: #{value}"
   
 end
