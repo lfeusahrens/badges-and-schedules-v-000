@@ -13,11 +13,11 @@ end
 def assign_rooms(attendees)
   room_number = 1 
   room_messages = []
-  attendees.each_with_index do |value, index|
-  puts "#{index}: #{value}"
-  
-end
-assign_rooms(attendees)
+  attendees.each do |attendees|
+  room_messages << "Hello, #{attendees}! You'll be assigned to room #{room_number}!"
+  room_number += 1
+  end
+  room_messages
 end
 
 def printer
