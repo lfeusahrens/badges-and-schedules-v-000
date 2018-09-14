@@ -3,14 +3,19 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(attendees)
-  attendees = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
-  attendees.each{"Hello, my name is #{name}."}
-  
+  new_array = []
+  attendees.each do |name|
+    new_array << badge_maker(name)
 end
+new_array
 end
 
-def assign_rooms
+def assign_rooms(attendees)
+  ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"].each_with_index do |value, index|
+  puts "#{index}: #{value}"
   
+end
+
 end
 
 def printer
