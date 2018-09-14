@@ -11,6 +11,8 @@ new_array
 end
 
 def assign_rooms(attendees)
+  room_number = 1 
+  room_messages = []
   attendees.each_with_index do |value, index|
   puts "#{index}: #{value}"
   
